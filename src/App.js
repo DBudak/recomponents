@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         <h3>Here are The Test Inputs:</h3>
       <ReInput/>
-      <ReSelect/>
+      <ReSelect options={[{text:"foo", value:"bar"}, {text: "Lorem", value: "Ipsum"}]}/>
       <ReButton/>
       </header>
     </div>

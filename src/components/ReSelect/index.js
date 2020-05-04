@@ -1,9 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ReSelect = props => {
+const ReSelect = ({ options=[], className }) => {
+    const displayOptions = options.map(el => {
+        return (
+            <div>
+                {el.text}
+            </div>
+        )
+    })
     return (
-       <select></select>
+        <div>
+            <div className={`recomponent-select ${className}`}>
+                {displayOptions}
+            </div>
+            <select></select>
+        </div>
     )
 }
 
